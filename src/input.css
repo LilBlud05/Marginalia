@@ -1,1 +1,16 @@
 @import "tailwindcss";
+
+@layer components {
+    .nav-color {
+        @apply hover:text-[#2a2318];
+    }
+
+    .book-box {
+        @apply flex-1 items-end justify-center pb-3 text-[11px] font-medium tracking-[0.12em] text-white/90 [writing-mode:vertical-rl] [transform:rotate(180deg)];
+    }
+
+    .grid-content {
+        @apply flex min-h-[220px] border border-[#2a2318]/10 bg-[#efe6ce]
+    }
+}
+

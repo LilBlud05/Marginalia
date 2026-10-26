@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "tailwindcss -i ./src/input.css -o ./src/output.css",
+    "dev": "PORT=${PORT:-4173}; npm run build && (tailwindcss -i ./src/input.css -o ./src/output.css --watch & python3 -m http.server \"$PORT\")"
+  },
   "dependencies": {
     "@tailwindcss/cli": "^4.3.3",
     "tailwindcss": "^4.3.3"
